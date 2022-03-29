@@ -1,6 +1,8 @@
 import "./Header.css";
 import {BsCart3} from 'react-icons/bs';
 import { IoMenu } from "react-icons/io5";
+import { Link } from "react-router-dom";
+
 
 const Header =() =>{
 return (
@@ -11,29 +13,29 @@ return (
             <button className="menu-btn">
                 <IoMenu />
             </button>
-            <a href="#" className="logo-link">
+            <Link to="/" className="logo-link">
                 SFood
-            </a>
+            </Link>
             <ul className="header-list">
                 <li className="header-item">
-                    <a href="#" className="header-link">
+                    <Link to="/" className="header-link">
                         Главная
-                    </a>
+                    </Link>
                 </li>
                 <li className="header-item">
-                    <a href="#" className="header-link">
+                    <Link to="/filial" className="header-link">
                         Филиалы
-                    </a>
+                    </Link>
                 </li>
                 <li className="header-item">
-                    <a href="#" className="header-link">
+                    <Link to="/about" className="header-link">
                         О нас
-                    </a>
+                    </Link>
                 </li>
                 <li className="header-item">
-                    <a href="#" className="header-link">
+                    <Link to="/contact" className="header-link">
                     Контакты
-                    </a>
+                    </Link>
                 </li>
 
             </ul>

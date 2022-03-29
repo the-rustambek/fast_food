@@ -22,7 +22,10 @@ img{
     width: 100%;
     margin: 0 auto;
 }
-
+.swiper{
+    margin-bottom: 20px;
+    
+}
 /* @media(max-width:1550px){
     .container-fluid{
         width: 1400px;

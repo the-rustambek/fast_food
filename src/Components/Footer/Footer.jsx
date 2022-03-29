@@ -1,5 +1,6 @@
 import "./Footer.css"
 import { FaInstagram, FaTelegramPlane, FaYoutube} from "react-icons/fa";
+
 const Footer = () =>{
 return(
 <footer className="footer">

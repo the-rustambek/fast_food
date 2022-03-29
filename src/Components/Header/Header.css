@@ -206,7 +206,9 @@
     .container{
         width: 300px;
     }
-    
+    .login-btn{
+padding: 10px 15px;
+    }
 }
 @media(max-width:300px){
     .container{
