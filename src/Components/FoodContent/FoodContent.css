@@ -78,3 +78,152 @@
 .foods-item:nth-child(4),.foods-item:nth-child(3), .foods-item:nth-child(2){
     max-height: 65px;
 }
+
+
+
+.category .nested-links__link-active {
+    color:blueviolet;
+    background-color: white;
+  }
+  
+  .category .nested-links__link-active::before {
+    display: inline-block;
+  }
+@media(max-width:1160px){
+    .container{
+        width: 1000px;
+    }
+.foods-img{
+    width: 205px;
+
+}
+.nested-links__link{
+    padding: 8px 12px;
+}
+
+}
+
+
+@media(max-width:1020px){
+    .container{
+        width: 900px;
+    }
+    .foods-list{
+        width: 32%;
+    }
+    .foods-img{
+        width: 264px;
+    
+    }
+    .nested-links__link{
+        padding: 5px 8px;
+    }
+}
+
+@media(max-width:920px){
+    .container{
+        width: 800px;
+    }
+    .foods-img{
+        width: 230px;
+    
+    }
+    .nested-links__link{
+        padding: 3px 6px;
+    }
+
+}
+
+@media(max-width:820px){
+    .container{
+        width: 700px;
+    }
+    .foods-list{
+        width: 45%;
+    }
+    .foods-img{
+        width: 290px;
+    
+    }
+
+    .nested-links{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .nested-links__link{
+        padding: 6px 25px;
+    }
+ 
+}
+
+
+@media(max-width:720px){
+    .container{
+        width: 600px;
+    }
+    .foods-img{
+        width: 247px;
+    
+    }
+
+    .nested-links{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .nested-links__link{
+        padding: 6px 25px;
+    }
+}
+
+@media(max-width:620px){
+    .container{
+        width: 500px;
+    }
+    .foods-list{
+        width: 80%;
+    }
+    .foods-img{
+        width: 380px;
+        height: 200px;
+    
+    }
+}
+
+@media(max-width:520px){
+    .container{
+        width: 400px;
+    }
+    .foods-img{
+        width: 295px;
+        height: 180px;
+    
+    }
+}
+
+@media(max-width:420px){
+    .container{
+        width: 300px;
+    }
+    .foods-list{
+        width: 90%;
+    }
+    .foods-img{
+        width: 250px;
+        height: 150px;
+    
+    }
+    .nested-links__link{
+        padding: 5px 8px;
+    }
+}
+@media(max-width:320px){
+    .container{
+        width: 90%;
+    }
+
+    .foods-img{
+        width: 100%;
+        height: 100%;
+    
+    }
+}

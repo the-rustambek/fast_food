@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./Category.css";
+import "../FoodContent/FoodContent.css"
 
 const Category = () => {
 return (
