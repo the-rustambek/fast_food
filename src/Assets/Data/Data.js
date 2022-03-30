@@ -61,7 +61,7 @@ import img40 from "../Img/40.jpg"
 
 const foods = [{
         id: 1,
-        img: img1,
+        img: "https://cdn.delever.uz/delever/d4db4b28-c365-47ca-8509-0557473f4880",
         title: "Spicy seasoned seafood noodles",
         price: 2.29,
         available: 20,
@@ -70,7 +70,7 @@ const foods = [{
     },
     {
         id: 2,
-        img: img2,
+        img: "https://cdn.delever.uz/delever/d4db4b28-c365-47ca-8509-0557473f4880",
         title: "  x owls available",
         price: 3.29,
         available: 2,
@@ -78,21 +78,21 @@ const foods = [{
     },
     {
         id: 3,
-        img: img3,
+        img: "https://cdn.delever.uz/delever/d4db4b28-c365-47ca-8509-0557473f4880",
         title: "Salted Pasta with mushroom sauce",
         price: 5.29,
         available: 17,
         type: "hot-dishes"
     }, {
         id: 4,
-        img: img4,
+        img: "https://cdn.delever.uz/delever/d4db4b28-c365-47ca-8509-0557473f4880",
         title: "Beef dumpling in hot soup",
         price: 3.29,
         available: 6,
         type: "hot-dishes"
     }, {
         id: 5,
-        img: img5,
+        img: "https://cdn.delever.uz/delever/d4db4b28-c365-47ca-8509-0557473f4880",
         title: "Healthy noodle with spinach leaf",
         price: 2.29,
         available: 12,

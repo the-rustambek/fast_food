@@ -7,7 +7,8 @@ return (
     <div className="container">
         <ul className="nested-links">
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/">
+                <NavLink className="nested-links__link"
+                 activeClassName="nested-links__link-active" exact to="/">
                     Lavash</NavLink>
             </li>
             <li className="nested-links__item">
@@ -15,60 +16,63 @@ return (
                     to="/desert">Desert</NavLink>
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/set">
+                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/cold_dishes">
                     Set</NavLink>
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/xaggi">
+                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/appetizer">
                     Xaggi</NavLink>
             </li>
             <li className="nested-links__item">
                 <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact
-                    to="/burger">Burger</NavLink>
+                    to="/grill">Burger</NavLink>
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/pizza">
+                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/soup">
                     Pizza</NavLink>
                     </li>
                     <li className="nested-links__item">
                 <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact
-                    to="/sendvich">Sendvich</NavLink>
+                    to="/cold_dishes">Sendvich</NavLink>
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/donar">
+                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/hot-dishes">
                     Donar</NavLink>
 
                     
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/xot-dog">
+                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/grill">
                     Xot-Dog</NavLink>
 
                     
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/free">
+                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/soup">
                     Free</NavLink>
 
                     
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/drink">
+                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/hot-dishes">
                     Drink</NavLink>       
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/salad">
+                <NavLink className="nested-links__link" 
+                activeClassName="nested-links__link-active" exact to="/appetizer">
                     Salad</NavLink>
                     
             </li>
                <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/bread">
+                <NavLink className="nested-links__link"
+                 activeClassName="nested-links__link-active" 
+                 exact to="/grill">
                     Bread</NavLink>
 
                     
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/sauce">
+                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/soup">
                 Sauce</NavLink>
 
                     
