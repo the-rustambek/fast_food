@@ -54,14 +54,11 @@ return (
             </li>
             <li className="nested-links__item">
                 <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/drink">
-                    Drink</NavLink>
-
-                    
+                    Drink</NavLink>       
             </li>
             <li className="nested-links__item">
                 <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/salad">
                     Salad</NavLink>
-
                     
             </li>
                <li className="nested-links__item">
