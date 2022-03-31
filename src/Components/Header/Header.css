@@ -94,6 +94,12 @@
     width: 20px;
     padding-right: 55px;
     position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.basket-btn:hover{
+    transform: scale(1.5);
 }
 
 .basket-btn p{
@@ -114,12 +120,150 @@
     align-items: center;
 }
 
- 
+ .header-item--active{
+    background-color: blueviolet;
+    color: white;
+    
+    transform: scale(0.9);
+ }
+
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    top: 0%;
+    
+}
 
 
 
 
 
+.modal-box{
+    padding: 10px;
+}
+
+.modal-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+    margin: 8px 0;
+    padding: 4px 0;
+    
+}
+.modal-img{
+    width: 80px;
+    height: 80px;
+}
+
+
+.modal{
+    position: relative;
+}
+.close-btn{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translateX(-100%);
+    background-color: red;
+    color: white;
+    border: none;
+    font-weight: bolder;font-size: 22px;
+    width: 24px;
+    height: 24px;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  } */
+  .modal-list{
+    overflow: auto;
+    height: 340px;
+    padding: 0px 5px;
+    padding-right: 15px;
+}
+
+.modal-title{
+    width: 210px;
+    white-space: wrap; 
+  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  max-height: 40px;
+  
+}
+.modal-count{
+    width: 20px;
+}
+.modal-price{
+    width: 100px;
+    color: #51267d;
+    
+}
+.modal-btn{
+    width: 20px;
+}
+.modal-blok{
+    width: 90px;
+}
+.modal-minus, .modal-plus, .modal-count{
+    padding: 5px;
+    width: 34px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #745298;
+}
+.modal-item, .modal-blok{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-minus, .modal-plus{
+    background-color: rgba(81,38,125,.08);
+    color: #51267d;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.modal-btn{
+    color: red;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 30px;
+    font-size: 20px;
+}
 @media(max-width:1160px){
     .container{
         width: 1000px;

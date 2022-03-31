@@ -18,7 +18,7 @@ export default function SwiperFood() {
  
 
   return (
-    <div className="swiper">
+    <div className="swiper swipers">
       <div className="container-fluid">
       <div className='swiper-box'>
       <Swiper  

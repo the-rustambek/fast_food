@@ -9,15 +9,19 @@ return (
         <ul className="nested-links">
             <li className="nested-links__item">
                 <NavLink className="nested-links__link"
-                 activeClassName="nested-links__link-active" exact to="/">
+                 activeClassName="nested-links__link-active" 
+                 exact to="/">
                     Lavash</NavLink>
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact
+                <NavLink className="nested-links__link"
+                 activeClassName="nested-links__link-active"
+                  exact
                     to="/desert">Desert</NavLink>
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/cold_dishes">
+                <NavLink className="nested-links__link"
+                 activeClassName="nested-links__link-active" exact to="/cold_dishes">
                     Set</NavLink>
             </li>
             <li className="nested-links__item">
@@ -73,7 +77,9 @@ return (
                     
             </li>
             <li className="nested-links__item">
-                <NavLink className="nested-links__link" activeClassName="nested-links__link-active" exact to="/soup">
+                <NavLink className="nested-links__link"
+                 activeClassName="nested-links__link-active"
+                  exact to="/soup">
                 Sauce</NavLink>
 
                     
