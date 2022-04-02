@@ -26,8 +26,8 @@ const FoodContent = () =>{
                                 const foundFood = foods.find(
                                   (ovqat) => ovqat.id === food.id
                                 );
-                                foundFood.number = foundFood.number ? 
-                                foundFood.number + 1 : 1;
+                                foundFood.count = foundFood.count ? 
+                                foundFood.count + 1 : 1;
                                 const uniqueArr = [
                                   ...new Set([...orderFoods,foundFood])
                                 ]

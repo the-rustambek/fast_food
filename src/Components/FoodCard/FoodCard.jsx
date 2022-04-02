@@ -22,7 +22,7 @@ const FoodCard =({id,img,title,price,available
         <span>
             {price} сум
         </span>
-        <button className="foods-btn">
+        <button className="foods-btn" >
         Заказать
         </button>
     </li>
