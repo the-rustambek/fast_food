@@ -4,7 +4,7 @@ import "../FoodContent/FoodContent.css";
 const FoodCard =({id,img,title,price,available
   ,onClick}) =>{
   return(
-    <ul className="foods-list"  onClick={onClick} key={id}>
+    <ul className="foods-list"   key={id}>
     <li className="foods-item">
         <img src={img} alt="" className="foods-img" />
     </li>
@@ -22,7 +22,7 @@ const FoodCard =({id,img,title,price,available
         <span>
             {price} сум
         </span>
-        <button className="foods-btn" >
+        <button className="foods-btn" onClick={onClick}>
         Заказать
         </button>
     </li>

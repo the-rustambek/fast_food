@@ -21,7 +21,8 @@ const FoodContent = () =>{
                      }).map((food)=>(
                          <FoodCard img={food.img} key={food.id}
                          title={food.title} price={food.price} 
-                         available={food.available}   onClick={(e) => 
+                         available={food.available}  
+                          onClick={(e) => 
                             {
                                 const foundFood = foods.find(
                                   (ovqat) => ovqat.id === food.id

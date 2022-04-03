@@ -417,4 +417,55 @@ const foods = [{
     },
 ]
 
-export default foods;
+
+const filialData = [
+    {
+        id:1,
+        title: "MaxWay Magic City 2",
+        location:"Magic City,ул. Бабура, 1, Ташкент, Узбекистан",
+        date: "10:00-03:00",
+    },
+    {
+        id:2,
+        title: "MaxWay Magic City 3",
+        location:"Magic City,ул. Бабура, 74, Ташкент, Узбекистан",
+        date: "10:00-01:00",
+    },
+    {
+        id:3,
+        title: "MaxWay Magic City 4",
+        location:"Magic City,ул. Бабура, 14, Ташкент, Узбекистан",
+        date: "10:00-03:00",
+    },
+    {
+        id:4,
+        title: "MaxWay Magic City 5",
+        location:"Magic City,ул. Бабура, 4, Ташкент, Узбекистан",
+        date: "10:00-01:00",
+    },
+    {
+        id:5,
+        title: "MaxWay Magic City 6",
+        location:"Magic City,ул. Бабура, 24, Ташкент, Узбекистан",
+        date: "10:00-03:00",
+    },
+    {
+        id:6,
+        title: "MaxWay Magic City 7",
+        location:"Magic City,ул. Бабура, 2, Ташкент, Узбекистан",
+        date: "10:00-03:00",
+    },
+       {
+        id:7,
+        title: "MaxWay Magic City 7",
+        location:"Magic City,ул. Бабура, 99, Ташкент, Узбекистан",
+        date: "10:00-03:00",
+    },
+    {
+        id:8,
+        title: "MaxWay Magic City 8",
+        location:"Magic City,ул. Бабура, 55, Ташкент, Узбекистан",
+        date: "10:00-02:00",
+    }
+]
+export { foods,filialData};

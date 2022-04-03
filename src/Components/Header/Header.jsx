@@ -40,20 +40,24 @@ if(count<=0){
             </Link>
             <ul className="header-list">
                 <li className="header-item">
-                    <NavLink activeClassName="header-item--active" to="/" className="header-link" exact>
+                    <NavLink activeClassName="header-item--active" to="/" 
+                    className="header-link" exact>
                         Главная
                     </NavLink>
                 </li>
                 <li className="header-item">
-                    <NavLink activeClassName="header-item--active" to="/filial" className="header-link">
-                        Филиалы
+                    <NavLink activeClassName="header-item--active"
+                     to="/filial" className="header-link">
+                             Филиалы
                     </NavLink>
                 </li>
                 <li className="header-item">
-                    <NavLink activeClassName="header-item--active" to="/about" className="header-link">
+                    <NavLink activeClassName="header-item--active"
+                     to="/about" className="header-link">
                         О нас
                     </NavLink>
                 </li>
+           
                 <li className="header-item">
                     <NavLink activeClassName="header-item--active" to="/contact" className="header-link">
                         Контакты
@@ -66,7 +70,8 @@ if(count<=0){
             <button className="basket-btn" onClick={()=>openKorzinkaModal()}>
                 <BsCart3 />
                 {orderFoods.length > 0 && (
-                <p>{orderFoods.map((food)=>(<span>{food.count}</span>))}</p>)}
+                <p>{orderFoods.map((food)=>
+                (<span>{food.count}</span>))}</p>)}
             </button>
 
             <button className="login-btn">
