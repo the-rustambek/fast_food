@@ -4,6 +4,7 @@ import './App.css';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import SwiperFood from './Components/Swiper/Swiper';
+import AboutPage from './Pages/AboutPage/AboutPage';
 import FilialCardPage from './Pages/FilialCardPage/FilialCardPage';
 import FilialPage from './Pages/FilialPage/FilialPage';
 import HomePage from './Pages/HomePage/HomePage';
@@ -21,7 +22,7 @@ return (
       <FilialCardPage />
     </Route>
     <Route path="/about" exact>
-      BIz haqimizda
+      <AboutPage />
     </Route>
     <Route path="/contact" exact>
       Bog'lanish
