@@ -468,4 +468,4 @@ const filialData = [
         date: "10:00-02:00",
     }
 ]
-export { foods,filialData};
+export default foods;

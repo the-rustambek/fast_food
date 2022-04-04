@@ -14,6 +14,13 @@
     box-shadow: 0 4px 30px rgb(0 0 0 / 7%);
     cursor: pointer;
 }
+.filial-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: black;
+}
 
 .filial-title{
     font-size: 20px;
