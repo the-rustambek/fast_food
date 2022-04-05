@@ -1,31 +1,34 @@
 import { Link } from "react-router-dom";
-import "./Register.css";
+import "../Login/Login.css";
 
-const Register =() =>{
-    return (
-        <section className="register">
-            <h3 className="register-title">
-            Регистрация
-            </h3>
-            <form  className="register-form" method="POST">
-                <input type="text"placeholder="Имя" name="name" required  min="3" />
-                <input type="tel" placeholder="Номер телефона" name="phone" required  min="3" />
-                <button type="submit" className="register-btn">
-
-                Регистрация
-                </button>
-            </form>
-            <span className="register-span">
-                <p>
-                У вас есть аккаунта?
-                </p>
-                <Link to="/login">
-                Войти
-                </Link>
-            </span>
-        
-        </section>
-    )
+const Register = ()=>{
+return (
+<div className="login">
+    <h2 className="login-title">
+    Регистрация
+    </h2>
+    <p className="login-text">
+        Войдите с вашим номером телефона
+    </p>
+    <form className="login-form" method="POST">
+        <input className="form-input" type="text"placeholder="Имя" name="name" required  min="3" />
+        <input className="form-input" type="tel" placeholder="Номер телефона" name="phone" required  min="3" />
+        <button className="login-btn register-btn">
+        Регистрация
+        </button>
+    </form>
+    <span className="login-span register-span">
+        <p>
+        У вас есть аккаунта?
+        </p>
+        <Link className="login-link" to="/login">
+        Войти
+        </Link>
+    </span>
+</div>
+)
 }
+
+
 
 export default Register;

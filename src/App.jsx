@@ -33,9 +33,9 @@ return (
     <Route path="/login" exact>
       <Login />
     </Route>
-    <Route path="/register" exact>
+    {/* <Route path="/register" exact>
       <Register />
-    </Route>
+    </Route> */}
     <Route path="/">
       <HomePage />
     </Route>

@@ -40,7 +40,10 @@ function incrementCount() {
     function openLoginModal(){
         setLoginModal(!loginModal);
     }
-
+    const [registerModal,setRegisterModal] = useState(false);
+    function openRegisterModal(){
+        setRegisterModal(!registerModal)
+    }
 return (
 <header className="header">
     <div className="container">
@@ -84,7 +87,8 @@ return (
                     (<span>{food.count}</span>))}</p>)}
             </button>
 
-            <button className="login-btn" onClick={() => openLoginModal()}>
+            <button className="login-btn" 
+            onClick={() => openLoginModal()}>
                 Войти
             </button>
         </div>
@@ -134,12 +138,18 @@ return (
         
 {/* ******************   loginModal              ******************************* */}
        
-        <Modal className="modal" show={loginModal} w={400} mh={350}>
+        <Modal className="modal login-modal" show={loginModal} w={400} mh={350}>
             <button className="close-btn" onClick={()=>setLoginModal()}>
                 <IoCloseOutline />
             </button>
             <Login />
-            {/* <Register /> */}
+        </Modal>
+        <Modal className="modal login-modal" show={registerModal} w={400} mh={350}>
+            <button className="close-btn" 
+            onClick={() => openRegisterModal()}>
+                <IoCloseOutline />
+            </button>
+            <Register />
         </Modal>
     </div>
 

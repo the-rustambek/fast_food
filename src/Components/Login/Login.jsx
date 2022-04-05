@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
 
 const Login = ()=>{
+    const [registerModal,setRegisterModal] = useState(false);
+    function openRegisterModal(){
+        setRegisterModal(!registerModal)
+    }
 return (
 <div className="login">
     <h2 className="login-title">
@@ -20,9 +25,10 @@ return (
         <p>
         У вас нет аккаунта?
         </p>
-        <Link to="/register">
+        <button className="login-link reg-link" 
+           onClick={() => openRegisterModal(!registerModal)}>
         Регистрация
-        </Link>
+        </button>
     </span>
 </div>
 )
