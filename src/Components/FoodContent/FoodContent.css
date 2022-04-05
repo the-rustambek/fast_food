@@ -72,7 +72,7 @@
     background-color: white;
     color: blueviolet;
     border: 2px solid blueviolet;
-    transform: rotate(360deg);
+    transform: scale(0.9)
 }
 
 .foods-item:nth-child(4),.foods-item:nth-child(3), .foods-item:nth-child(2){

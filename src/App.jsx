@@ -3,6 +3,8 @@ import { Switch } from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
 import SwiperFood from './Components/Swiper/Swiper';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
@@ -27,6 +29,12 @@ return (
     </Route>
     <Route path="/contact" exact>
       <ContactPage />
+    </Route>
+    <Route path="/login" exact>
+      <Login />
+    </Route>
+    <Route path="/register" exact>
+      <Register />
     </Route>
     <Route path="/">
       <HomePage />

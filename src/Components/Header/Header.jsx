@@ -9,28 +9,41 @@ import { RiDeleteBinLine } from "react-icons/ri";
 
 import { IoCloseOutline } from "react-icons/io5";
 import { Context } from "../../Context/OrderFoods";
+import Login from "../Login/Login";
+import Register from "../Register/Register";
 
 const Header =() =>{
 let [count, setCount] = useState(1);
 const {orderFoods,setOrderFoods} = useContext(Context);
-
+const [loginModal,setLoginModal] = useState(false)
+const [korzinkaModal, setKorzinkaModal]=useState(false);
+const [deleteKorzinkaModal,setDeleteKorzinkaModal]=useState(false);
 
 function incrementCount() {
-count = count + 1;
-setCount(count);
-}
-function decrementCount() {
-if(count<=0){ 
-    count=1
- } count=count - 1; 
- setCount(count); 
-} 
-    const [korzinkaModal, setKorzinkaModal]=useState(false);
-    const [deleteKorzinkaModal,setDeleteKorzinkaModal]=useState(false); function openKorzinkaModal(){
-    setKorzinkaModal(!korzinkaModal); } function openDeleteKorzinkaModal(){ setDeleteKorzinkaModal(!deleteKorzinkaModal)
-    } return ( 
-    <header className="header">
-         <div className="container">
+    count = count + 1;
+    setCount(count);
+    }
+    function decrementCount() {
+    if(count<=0){ 
+        count=1
+     } count=count - 1; 
+     setCount(count); 
+    } 
+
+    function openKorzinkaModal(){
+        setKorzinkaModal(!korzinkaModal);
+ }
+    function openDeleteKorzinkaModal(){ 
+     setDeleteKorzinkaModal(!deleteKorzinkaModal)
+    }
+
+    function openLoginModal(){
+        setLoginModal(!loginModal);
+    }
+
+return (
+<header className="header">
+    <div className="container">
         <div className="header-left">
             <button className="menu-btn">
                 <IoMenu />
@@ -40,24 +53,21 @@ if(count<=0){
             </Link>
             <ul className="header-list">
                 <li className="header-item">
-                    <NavLink activeClassName="header-item--active" to="/" 
-                    className="header-link" exact>
+                    <NavLink activeClassName="header-item--active" to="/" className="header-link" exact>
                         Главная
                     </NavLink>
                 </li>
                 <li className="header-item">
-                    <NavLink activeClassName="header-item--active"
-                     to="/filial" className="header-link">
-                             Филиалы
+                    <NavLink activeClassName="header-item--active" to="/filial" className="header-link">
+                        Филиалы
                     </NavLink>
                 </li>
                 <li className="header-item">
-                    <NavLink activeClassName="header-item--active"
-                     to="/about" className="header-link">
+                    <NavLink activeClassName="header-item--active" to="/about" className="header-link">
                         О нас
                     </NavLink>
                 </li>
-           
+
                 <li className="header-item">
                     <NavLink activeClassName="header-item--active" to="/contact" className="header-link">
                         Контакты
@@ -71,14 +81,16 @@ if(count<=0){
                 <BsCart3 />
                 {orderFoods.length > 0 && (
                 <p>{orderFoods.map((food)=>
-                (<span>{food.count}</span>))}</p>)}
+                    (<span>{food.count}</span>))}</p>)}
             </button>
 
-            <button className="login-btn">
+            <button className="login-btn" onClick={() => openLoginModal()}>
                 Войти
             </button>
         </div>
 
+{/* ******************   korzinkaModal              ******************************* */}
+       
         <Modal className="modal" show={korzinkaModal} w={800} mh={400}>
             <button className="close-btn" onClick={()=>setKorzinkaModal()}>
                 <IoCloseOutline />
@@ -88,10 +100,9 @@ if(count<=0){
                 <ul className="modal-list">
                     {orderFoods.map((food)=>(
                     <li className="modal-item">
-                        <img className="modal-img"
-                            src={food.img} />
+                        <img className="modal-img" src={food.img} />
                         <p className="modal-title">
-                        {food.title}
+                            {food.title}
                         </p>
                         <div className="modal-blok">
                             <button className="modal-minus" onClick={decrementCount}>
@@ -105,12 +116,12 @@ if(count<=0){
                             </button>
                         </div>
                         <p className="modal-price">
-                        {(food.price * food.count).toFixed(1)} сум
+                            {(food.price * food.count).toFixed(1)} сум
                         </p>
                         <button className="modal-btn" onClick={()=>{
-                                setOrderFoods(orderFoods.filter
-                                (ovqat => ovqat.id !== food.id))
-                                }}>
+                            setOrderFoods(orderFoods.filter
+                            (ovqat => ovqat.id !== food.id))
+                            }}>
                             <RiDeleteBinLine />
                         </button>
                     </li>
@@ -119,10 +130,21 @@ if(count<=0){
                 )}
             </div>
         </Modal>
+
+        
+{/* ******************   loginModal              ******************************* */}
+       
+        <Modal className="modal" show={loginModal} w={400} mh={350}>
+            <button className="close-btn" onClick={()=>setLoginModal()}>
+                <IoCloseOutline />
+            </button>
+            <Login />
+            {/* <Register /> */}
+        </Modal>
     </div>
 
-    </header>
-    )
-    }
+</header>
+)
+}
 
-    export default Header;
+export default Header;
