@@ -118,8 +118,7 @@
     }
     
     .about-img{
-        height: 250px;
-        
+        height: 250px;  
     }
 
 }
@@ -132,7 +131,5 @@
     
     .about-img{
         height: 200px;
-        
-        
     }
 }
