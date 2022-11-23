@@ -265,6 +265,21 @@
     font-size: 20px;
     cursor: pointer;
 }
+.modal-context{
+    font-size: 35px;
+    color: #51267d;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 @media(max-width:1160px){
     .container{
         width: 1000px;
