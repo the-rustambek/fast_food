@@ -29,6 +29,7 @@ const Header = () => {
         } count = count - 1;
         setCount(count);
     }
+    console.log(count,"count")
 
     function openKorzinkaModal() {
         setKorzinkaModal(!korzinkaModal);
@@ -105,7 +106,7 @@ const Header = () => {
                             <ul className="modal-list">
                                 {orderFoods.map((food,i) => (
                                     <li key={i} className="modal-item">
-                                        <img className="modal-img" src={food.img} />
+                                        <img className="modal-img" alt="dsd" src={food.img} />
                                         <p className="modal-title">
                                             {food.title}
                                         </p>
@@ -114,14 +115,14 @@ const Header = () => {
                                                 -
                                             </button>
                                             <span className="modal-count">
-                                                {food.count}
+                                                {count}
                                             </span>
                                             <button className="modal-plus" onClick={incrementCount}>
                                                 +
                                             </button>
                                         </div>
                                         <p className="modal-price">
-                                            {(food.price * food.count).toFixed(1)} сум
+                                            {(food.price * count).toFixed(1)} сум
                                         </p>
                                         <button className="modal-btn" onClick={() => {
                                             setOrderFoods(orderFoods.filter

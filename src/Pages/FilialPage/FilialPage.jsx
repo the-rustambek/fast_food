@@ -27,6 +27,46 @@ return (
                 </div>
                 </Link>
             </li>
+            <li className="filial-item">
+                <Link className="filial-link" to="/filialCard">
+                <div className="filial-left">
+                    <h3 className="filial-title">
+                        MaxWay Tashkent City
+                    </h3>
+                    <p className="filial-text">
+                        Magic City, Navoiy, 26, Ташкент, Узбекистан
+                    </p>
+                </div>
+                <div className="filial-right">
+                    <p className="filial-subtext">
+                        Часы работы
+                    </p>
+                    <p className="filial-text">
+                        10:00-03:00
+                    </p>
+                </div>
+                </Link>
+            </li>
+            <li className="filial-item">
+                <Link className="filial-link" to="/filialCard">
+                <div className="filial-left">
+                    <h3 className="filial-title">
+                        MaxWay Chilanzar City
+                    </h3>
+                    <p className="filial-text">
+                        Magic City,ул. Chilanzar, 3, Ташкент, Узбекистан
+                    </p>
+                </div>
+                <div className="filial-right">
+                    <p className="filial-subtext">
+                        Часы работы
+                    </p>
+                    <p className="filial-text">
+                        10:00-03:00
+                    </p>
+                </div>
+                </Link>
+            </li>
         </ul>
     </div>
 
